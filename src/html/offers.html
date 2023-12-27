@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/offers.css">
+    
+  </head>
+  <body>
+    <div class="page-container">
+      <nav class="nav nav--collapsed">
+        <div class="nav__border"></div>
+        <a href="homepage.html" class="nav__link">
+          <div class="nav__icon-container">
+            <i class="material-icons">home</i>
+          </div>
+          <span class="nav__label">Home</span>
+        </a>
+        <a href="schedule.html" class="nav__link">
+          <div class="nav__icon-container">
+            <i class="material-icons">date_range</i>
+          </div>
+          <span class="nav__label">Schedule</span>
+        </a>
+        <a href="offers.html" class="nav__link">
+          <div class="nav__icon-container">
+            <i class="material-icons">person</i>
+          </div>
+          <span class="nav__label">Offers</span>
+        </a>
+        <a href="employed.html" class="nav__link">
+          <div class="nav__icon-container">
+            <i class="material-icons">assignment_ind</i>
+          </div>
+          <span class="nav__label">Employed</span>
+        </a>
+        <a href="statistics.html" class="nav__link">
+          <div class="nav__icon-container">
+            <i class="material-icons">pie_chart</i>
+          </div>
+          <span class="nav__label">Statistics</span>
+        </a>
+      </nav>
+      <main class="main">
+        <h2>Offers</h2>
+        <i>All opportunities offered by Air Hygiene.</i>
+        <div class="sheet">
+            <button class="button new_offer" onclick="addRow()">
+                New Offer
+            </button>
+            <button class="button sort">
+                Sort
+            </button>
+            <table class="table_data">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Wage</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Start Date</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Bobby</td>
+                    <td>Bentley</td>
+                    <td>Hourly</td>	
+                    <td>Intern</td>	
+                    <td></td>
+                    <td></td>
+                    <td>Summer 2024</td>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+      </main>
+    </div>
+    <script src="../js/nav.js"></script>
+    <script src="../js/offer.js"></script>
+  </body>
+</html> 
